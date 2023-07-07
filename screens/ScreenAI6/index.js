@@ -1,12 +1,12 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, Text } from 'react-native';
+import { SafeAreaView, ScrollView, Text, StyleSheet } from 'react-native';
 
 const Screen = () => {
   return <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.contentContainer}>
-        <Text style={styles.header}>Header</Text>
-        <Text style={styles.body}>Body</Text>
-        <Text style={styles.footer}>Footer</Text>
+        <Text style={styles.header}>Header Title</Text>
+        <Text style={styles.body}>Body Text</Text>
+        <Text style={styles.footer}>Footer Text</Text>
       </ScrollView>
     </SafeAreaView>;
 };
@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato',
     color: '#376D89',
     backgroundColor: '#DFEDF4',
-    padding: 16
+    padding: 16,
+    textAlign: 'center'
   },
   body: {
     fontSize: 16,
@@ -37,11 +38,12 @@ const styles = StyleSheet.create({
     padding: 16
   },
   footer: {
-    fontSize: 18,
+    fontSize: 16,
     fontFamily: 'Lato',
     color: '#376D89',
     backgroundColor: '#DFEDF4',
-    padding: 16
+    padding: 16,
+    textAlign: 'center'
   }
 });
 export default Screen;
